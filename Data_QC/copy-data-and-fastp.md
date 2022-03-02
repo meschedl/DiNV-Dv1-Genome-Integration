@@ -39,7 +39,7 @@ Add in DiNV so that it reads `DiNV NC_040699.1 Drosophila innubila nudivirus iso
 - This outputs the trimmed files as the shorter names KM_3_1.fq.gz and KM_3_2.fq.gz
 - To look at the output file, I need to secure copy it to my desktop and open. **Use desktop terminal window for this**   
 `scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/fastp.html /Users/m741s365/Desktop/Github/DiNV-Dv1-Genome-Integration/Data_QC/`
-- [This is what the output file looks like](https://rawcdn.githack.com/meschedl/DiNV-Dv1-Genome-Integration/7b485d1d02f890a6cd0520236f771a86e33a5d3f/fastp.html)
+- [This is what the output file looks like](https://rawcdn.githack.com/meschedl/DiNV-Dv1-Genome-Integration/6b880e89749ed66f0f7a073d77e667b6a61ac702/Data_QC/fastp.html)
 - There are a few main things I noticed
   - The quality trails off more for read 2 than read 1 at the end of the sequence
   - The first couple of bases have low scores, so I'll want to trim those, looks like 7 bases for each read. Even though they're still over 30 in score it looks weird to me
@@ -89,3 +89,22 @@ Insert size peak (evaluated by paired-end reads): 170
 
 - To look at the output file, I need to secure copy it to my desktop and open. **Use desktop terminal window for this**   
 `scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/trim-fastp.html /Users/m741s365/Desktop/Github/DiNV-Dv1-Genome-Integration/Data_QC/`
+- [This is what the output file looks like](https://rawcdn.githack.com/meschedl/DiNV-Dv1-Genome-Integration/6b880e89749ed66f0f7a073d77e667b6a61ac702/Data_QC/trim-fastp.html)
+- Move all the QC files and info into a new directory  
+`mkdir Seq_QC`  
+`mv /home/runcklesslab/Maggie/trim-fastp.html /home/runcklesslab/Maggie/Seq_QC/trim-fastp.html`  
+`mv /home/runcklesslab/Maggie/fastp.html /home/runcklesslab/Maggie/Seq_QC/fastp.html`  
+`mv /home/runcklesslab/Maggie/fastp.json /home/runcklesslab/Maggie/Seq_QC/fastp.json`  
+`mv /home/runcklesslab/Maggie/KM_3_1.fq.gz /home/runcklesslab/Maggie/Seq_QC/KM_3_1.fq.gz`  
+`mv /home/runcklesslab/Maggie/KM_3_2.fq.gz /home/runcklesslab/Maggie/Seq_QC/KM_3_2.fq.gz`
+
+
+**After talking with Rob, we decided that the 11% PCR duplication rate is pretty high, and that I should try to remove PCR duplicates with fastp**
+- Again I'll run the program on the original files with the added --dedup deduplication flag (need to make sure version of fastp is past v0.22.0)  
+`fastp -i KM_3_DNA_CKDL200150169-1a-N705-N505_H7N33CCX2_L1_1.fq.gz -I KM_3_DNA_CKDL200150169-1a-N705-N505_H7N33CCX2_L1_2.fq.gz --trim_front1 15 --trim_front2 15 --dedup --html trim-dedup-fastp.html -o KM_3_1_trim_d.fq.gz -O KM_3_2_trim_d.fq.gz`
+
+- Here is the output from the program:
+
+
+-
+`scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/trim-dedup-fastp.html /Users/m741s365/Desktop/Github/DiNV-Dv1-Genome-Integration/Data_QC/`
