@@ -25,7 +25,7 @@ Use control (^) O to save and ^X to exit the file
 - Also want to change the DiNV header sequence  
 `nano GCF_004132165.1_ASM413216v1_genomic.fna`  
 Add in DiNV so that it reads `DiNV NC_040699.1 Drosophila innubila nudivirus isolate DiNV_CH01M, complete genome`
-- There is also a file unplaced.scaf.fna that I don't know what to do with. It is from the _D. virilis_ genome. When you look at it, it is a bunch of repeats of Ts and Gs, with a few As and no Cs. So for right now I'm not going to use it?
+- There is also a file unplaced.scaf.fna that I don't know what to do with. It is from the _D. virilis_ genome. When you look at it, it is a bunch of repeats of Ts and Gs, with a few As and no Cs. It has unplaced as it's first word, so I'll keep that 
 
 **Step 2: Fastp Sequence Quality Checks**
 - [Fastp](https://github.com/OpenGene/fastp) is a program that will give you various quality metrics on sequence data, and also allow you to do trimming etc. on the sequences
@@ -100,11 +100,9 @@ Insert size peak (evaluated by paired-end reads): 170
 
 
 **After talking with Rob, we decided that the 11% PCR duplication rate is pretty high, and that I should try to remove PCR duplicates with fastp**
-- Again I'll run the program on the original files with the added --dedup deduplication flag (need to make sure version of fastp is past v0.22.0)  
-`fastp -i KM_3_DNA_CKDL200150169-1a-N705-N505_H7N33CCX2_L1_1.fq.gz -I KM_3_DNA_CKDL200150169-1a-N705-N505_H7N33CCX2_L1_2.fq.gz --trim_front1 15 --trim_front2 15 --dedup --html trim-dedup-fastp.html -o KM_3_1_trim_d.fq.gz -O KM_3_2_trim_d.fq.gz`
-
-- Here is the output from the program:
-
-
--
+- Again I'll run the program on the original files with the added --dedup deduplication flag (need to make sure version of fastp is past v0.22.0, I had to download this to my folder and run from there)  
+`/home/runcklesslab/Maggie/fastp -i KM_3_DNA_CKDL200150169-1a-N705-N505_H7N33CCX2_L1_1.fq.gz -I KM_3_DNA_CKDL200150169-1a-N705-N505_H7N33CCX2_L1_2.fq.gz --trim_front1 15 --trim_front2 15 --dedup --html trim-dedup-fastp.html -o KM_3_1_trim_d.fq.gz -O KM_3_2_trim_d.fq.gz`
+- Copy the file to my computer and send to Github   
 `scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/trim-dedup-fastp.html /Users/m741s365/Desktop/Github/DiNV-Dv1-Genome-Integration/Data_QC/`
+- [Here is the deduplicated and trimmed file](https://rawcdn.githack.com/meschedl/DiNV-Dv1-Genome-Integration/1c01f4b2e49f182a4cf41e7e661d874087462a5d/Data_QC/trim-dedup-fastp.html)
+- The problem of the shaky G,C,A, and T content lines doesn't go away.
