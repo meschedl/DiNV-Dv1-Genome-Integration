@@ -1,0 +1,583 @@
+[bam_rmdup_core] processing reference chr2...
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2119:8866:23003'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2101:27417:24585'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2119:8866:23003'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1119:28422:56458'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1119:8379:67234'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1105:18182:37840'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1218:30178:27960'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1104:17624:10679'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1104:17624:10679'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1104:17624:10679'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1113:4239:32707'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1113:4239:32707'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1113:4239:32707'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1121:15645:34535'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1121:15645:34535'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1121:15645:34535'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1121:15645:34535'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1202:17076:39862'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1202:17076:39862'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1202:17076:39862'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2102:17432:42306'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2102:17432:42306'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2102:17432:42306'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2116:12550:47421'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2203:28950:34869'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2203:28950:34869'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2219:16782:60765'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2219:16782:60765'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2219:16782:60765'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2219:16782:60765'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1117:32339:3612'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2103:16975:54453'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2120:17848:30826'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2111:5994:61767'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2115:18223:65441'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1120:15371:67427'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1101:16437:47896'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2113:21694:42306'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1116:4624:15303'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2221:8115:16322'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2221:8115:16322'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2214:26880:45452'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2122:26514:61696'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2222:32177:9976'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2124:22556:13633'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1214:31598:13650'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2103:25702:60431'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1104:25540:27415'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2114:30888:64456'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2114:19664:69379'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2105:11779:27732'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2105:11566:28277'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1120:29691:61081'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2103:2351:14283'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1107:12733:55086'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1214:32309:29753'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2118:14692:11646'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2119:17706:62822'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2118:14377:11418'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2119:17706:62822'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2118:14692:11646'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2119:17706:62822'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2115:31822:14283'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2121:26352:24075'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2212:15199:25253'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1115:22232:50375'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2114:13859:47755'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1223:23267:9800'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1214:17645:61415'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2107:13798:71559'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2121:15676:52273'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2111:13555:62312'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2109:18984:57583'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2121:9638:69379'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2121:9638:69379'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2206:7253:13070'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2207:25286:31441'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1213:20659:19487'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1213:20659:19487'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1219:24606:36627'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2221:23561:68113'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2119:18599:6249'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2118:9810:39686'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2219:11586:71207'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2108:2646:66584'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2107:12378:44872'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2224:26260:40548'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2112:7872:61714'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1212:20354:24831'. Continue anyway.
+[bam_rmdup_core] 43691 unmatched pairs
+[bam_rmdup_core] processing reference chr3...
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2107:6806:62857'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2107:6542:62997'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1212:3589:5880'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2113:16021:51676'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:23257:36926'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:23257:36926'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2114:16031:48705'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2206:6471:39001'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2223:6197:41831'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2107:8663:3841'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2108:8329:24603'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1102:31588:6214'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:22536:32478'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2211:22769:55034'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2206:28777:30668'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:15554:18661'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2118:8572:38807'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2115:26595:4175'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2124:9617:19874'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2105:10165:42798'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:1955:65388'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1122:24251:6020'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2219:5406:65388'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2124:30168:11945'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2107:22221:43290'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2209:23541:43396'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2203:22912:16147'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2124:27123:34236'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2212:16193:9079'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2116:6360:29349'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2108:14712:57073'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2102:9597:40548'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1205:2717:41849'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2220:18974:63156'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1224:31954:52063'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1222:3173:63525'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2117:29569:2715'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2108:20983:72367'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2108:20983:72367'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2118:6228:12982'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2117:8227:40811'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2223:2189:32109'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2121:4939:21508'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2211:17503:11523'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2112:11779:66091'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2112:11779:66091'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2218:22698:60220'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:27803:30422'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2203:6005:36469'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1210:17198:55368'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2116:17056:19961'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2116:17056:19961'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2219:21247:4579'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2101:9962:55877'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2216:11606:63542'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:1925:51553'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2207:13098:64369'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2221:21268:68535'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2206:6441:57477'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1113:11089:73018'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2117:11028:9097'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1203:5457:19768'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2203:31700:13896'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:4310:48933'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1117:26413:3647'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1224:16873:43835'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2221:21115:26114'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2214:17289:40548'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2208:25398:68517'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2101:18000:17729'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2220:8379:69238'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1207:14143:60237'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2116:16538:56756'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2116:15737:56985'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1120:27468:56915'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1120:27468:56915'. Continue anyway.
+[bam_rmdup_core] 31534 unmatched pairs
+[bam_rmdup_core] processing reference chr4...
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1112:9090:36293'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1115:8460:68781'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2121:18791:34852'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2111:5406:69713'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1223:18964:44573'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2119:8765:25816'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2108:4746:68535'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2205:29883:12648'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2204:7263:26624'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2223:19928:13439'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2119:17746:13000'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:12865:10099'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2101:9435:38473'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2210:9404:22106'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1201:29569:11787'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2107:10561:65072'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:22475:41585'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2201:6837:49549'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1117:32055:5862'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2104:9638:20155'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2122:29132:11312'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1222:22495:2311'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2115:19471:38280'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1218:16924:56264'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1115:28747:59727'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2219:2950:69115'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2107:18456:38842'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1118:28584:34834'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1214:26230:15426'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2102:6847:58848'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1109:10176:38702'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2211:10429:42798'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2102:15625:23460'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1109:17949:41479'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2113:3914:64421'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2216:27214:60800'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2217:3955:49443'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1108:26372:50234'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1208:27438:7392'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2120:18233:14934'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2206:30979:12929'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1110:23855:5124'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2204:11546:33797'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2209:15037:30984'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:26727:70047'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:31690:55438'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1122:10815:46560'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2104:16741:6126'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2209:19837:63841'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2112:12154:39458'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2216:19441:5563'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1215:6340:38807'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2218:23855:32549'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2218:23855:32549'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1216:28067:4825'. Continue anyway.
+[bam_rmdup_core] 31083 unmatched pairs
+[bam_rmdup_core] processing reference chr5...
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1108:25591:23917'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1120:2372:11857'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1211:19015:69625'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2214:16843:65335'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2203:26920:15039'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:29812:46560'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:24779:63824'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1207:10460:32056'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2110:7933:30070'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2110:7933:30070'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1207:24393:7532'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1118:29904:30615'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1104:24616:11013'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1104:24616:11013'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1104:24616:11013'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1105:10673:61257'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1113:23886:14529'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1113:23886:14529'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1113:4269:44995'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1116:24241:44644'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1116:24241:44644'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1119:29823:18098'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1119:29823:18098'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1119:29823:18098'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1119:12987:52678'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1119:12987:52678'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1119:12987:52678'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1120:30401:70680'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1120:30401:70680'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1120:30401:70680'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1121:26392:50691'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1121:26392:50691'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1121:26392:50691'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1123:19827:62347'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1123:19827:62347'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1202:19015:72438'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1202:19015:72438'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1202:19015:72438'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1202:19015:72438'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1204:6542:31213'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1208:30076:63507'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1208:30076:63507'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1208:30076:63507'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1208:30076:63507'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1209:14641:47316'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1209:14641:47316'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1209:14641:47316'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1213:2666:46789'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1213:2666:46789'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1213:2666:46789'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1213:2666:46789'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1215:30787:12314'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1215:30787:12314'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1215:7618:21755'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1215:7618:21755'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1215:7618:21755'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1216:12936:43413'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1216:12936:43413'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1216:12936:43413'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1216:12936:43413'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1224:17401:43800'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2104:21156:28400'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2104:21156:28400'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2105:8846:73000'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2105:8846:73000'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2105:8846:73000'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:3508:27433'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:3508:27433'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2112:7588:31828'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2112:7588:31828'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2112:7588:31828'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2116:27864:38684'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2116:27864:38684'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2116:27864:38684'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2116:27864:38684'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2122:9587:64790'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2122:3904:70205'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2122:3904:70205'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:14489:63261'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:14083:63542'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:14083:63542'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:14083:63542'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:14083:63542'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2204:16924:55420'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2204:16924:55420'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2207:9668:17641'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2207:9668:17641'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2208:16133:12631'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2208:16133:12631'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2208:16133:12631'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2208:16133:12631'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2209:8806:67761'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2209:8806:67761'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2209:8806:67761'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:13880:4720'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:13880:4720'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:13880:4720'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:13880:4720'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:13880:4720'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:19898:19715'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2217:3691:60413'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2217:3691:60413'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2217:3691:60413'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2217:28787:62364'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2217:28787:62364'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2217:28787:62364'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2224:9749:21966'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2224:9749:21966'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2224:9749:21966'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:5152:55877'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2220:31801:34430'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2209:12601:62734'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1121:3711:7286'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1113:2808:7937'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2110:7304:37700'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2121:21552:38122'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1104:16315:21174'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2204:4645:3841'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1216:27752:46718'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2116:7456:35819'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2107:15686:24233'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1206:26169:39862'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:24779:63824'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2118:12510:18801'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:6126:25886'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:7517:17817'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1223:24271:42903'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2124:26463:9642'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:22455:12613'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:22455:12613'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2214:12124:52238'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2121:25824:1467'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2121:25824:1467'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1216:16224:53117'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2121:17634:50006'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1121:10906:70311'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2115:4817:68517'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2119:4878:23337'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2219:8450:62083'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2109:10328:47509'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2216:28290:15092'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1210:9557:24128'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:17097:14406'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1214:11637:27556'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2107:15686:24233'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2115:28321:67006'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2206:4472:42112'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1114:8674:4632'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1116:8877:23161'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2124:26169:14476'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2218:24048:14881'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2121:16264:68482'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1108:5446:46507'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2216:3792:7849'. Continue anyway.
+[bam_rmdup_core] 38922 unmatched pairs
+[bam_rmdup_core] processing reference chr6...
+[bam_rmdup_core] 2355 unmatched pairs
+[bam_rmdup_core] processing reference chrx...
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1102:14001:72684'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2218:30462:68078'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2221:13291:7778'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1124:31335:38860'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2207:6411:33164'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1216:18781:61556'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2113:13636:31758'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1221:21856:41602'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1222:3681:5475'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1123:12388:26079'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:14235:56879'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:13677:38086'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2113:3468:22757'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1216:19278:65054'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2123:16254:69801'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:11241:24269'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1102:13920:23811'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1104:28676:5915'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1104:14742:16727'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1105:30716:61485'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1107:10663:2909'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1107:24068:33234'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1113:7354:55719'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1114:21318:27661'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1114:21318:27661'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1204:1844:63402'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1205:22993:34324'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1206:10967:35783'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1209:21105:18713'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1215:15716:62505'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1223:32451:52748'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2101:12073:10978'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2101:28077:39967'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2101:30919:43659'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2110:19339:64070'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2205:29762:55227'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2206:25246:36399'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2209:20973:27486'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2209:29000:32250'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2214:2341:47562'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2214:2280:47703'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2220:17980:67797'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2105:6258:19012'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2104:2554:10802'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:23338:9326'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:23338:9326'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2213:7781:56387'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2222:14174:68517'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2211:21917:62347'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2215:29396:23688'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2124:19116:20647'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2103:12834:63490'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1106:23287:60185'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1209:2767:68060'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2218:20263:27626'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2203:15808:48810'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2119:16214:47334'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2206:12479:25358'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2218:26413:38174'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2116:8024:36592'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2223:23815:6565'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1217:24972:46648'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2213:31832:69185'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2102:10703:51043'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2110:9252:31230'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1117:22485:8447'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1209:15524:40337'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1103:3823:39757'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2122:5599:1942'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2208:4208:40987'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2107:7446:20260'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2219:11535:10328'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1220:27154:71102'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2117:31395:55702'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2111:26829:26765'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2102:16437:51588'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2111:3731:39458'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2111:3934:35906'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2111:3731:39458'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2107:26453:24216'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2210:2575:57987'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2122:4594:55684'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1201:32349:64386'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2212:21217:5159'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1105:22029:39651'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:8217:46419'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1208:10105:36786'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1208:10105:36786'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2122:26382:20190'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1111:16122:13633'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1115:30807:4473'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1104:14346:71488'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1123:28909:54102'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2206:24647:46964'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2222:29366:10415'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:21420:23442'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2220:16640:71699'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2106:13443:42569'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2113:26900:61591'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2105:16214:45786'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1101:26565:57530'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1101:27478:57952'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2219:4919:18063'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1214:30492:47668'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2214:32167:69027'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2209:28625:60290'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2118:4076:17131'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2112:14113:66021'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1204:13758:27890'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2116:5589:9027'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2104:28838:14775'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2109:29660:34975'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2216:27488:3260'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:1212:9161:61907'. Continue anyway.
+[bam_rmdup_core] 79985 unmatched pairs
+[bam_rmdup_core] processing reference DiNV...
+[bam_rmdup_core] 1280 unmatched pairs
+[bam_rmdup_core] processing reference unplaced...
+[bam_rmdup_core] 67 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000019.1...
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2221:13017:53996'. Continue anyway.
+[bam_rmdup_core] 579 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000043.1...
+[bam_rmdup_core] 1713 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000047.1...
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2207:28331:59077'. Continue anyway.
+[bam_rmdup_core] 170 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000048.1...
+[bam_rmdup_core] 2 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000050.1...
+[bam_rmdup_core] 227 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000051.1...
+[bam_rmdup_core] 8 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000054.1...
+[bam_rmdup_core] 37 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000055.1...
+[bam_rmdup_core] 23 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000056.1...
+[bam_rmdup_core] 16 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000082.1...
+[bam_rmdup_core] 34 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000089.1...
+[bam_rmdup_core] 11 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000090.1...
+[bam_rmdup_core] 22 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000095.1...
+[bam_rmdup_core] 68 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000097.1...
+[bam_rmdup_core] 186 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000102.1...
+[bam_rmdup_core] 293 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000105.1...
+[bam_rmdup_core] processing reference VNHH02000107.1...
+[bam_rmdup_core] 34 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000108.1...
+[bam_rmdup_core] 94 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000111.1...
+[bam_rmdup_core] processing reference VNHH02000112.1...
+[bam_rmdup_core] 36 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000113.1...
+[bam_rmdup_core] 250 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000116.1...
+[bam_rmdup_core] 147 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000127.1...
+[bam_rmdup_core] 7 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000150.1...
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2223:13332:60940'. Continue anyway.
+[bam_rmdup_core] 360 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000151.1...
+[bam_rmdup_core] 29 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000171.1...
+[bam_rmdup_core] 115 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000177.1...
+[bam_rmdup_core] 662 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000181.1...
+[bam_rmdup_core] 7 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000187.1...
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2205:25824:11664'. Continue anyway.
+[bam_rmdup_core] inconsistent BAM file for pair 'E00489:560:H7N33CCX2:1:2114:10744:54735'. Continue anyway.
+[bam_rmdup_core] 353 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000188.1...
+[bam_rmdup_core] 200 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000191.1...
+[bam_rmdup_core] 44 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000195.1...
+[bam_rmdup_core] 9 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000196.1...
+[bam_rmdup_core] processing reference VNHH02000197.1...
+[bam_rmdup_core] 11 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000198.1...
+[bam_rmdup_core] 7 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000201.1...
+[bam_rmdup_core] 61 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000207.1...
+[bam_rmdup_core] 3 unmatched pairs
+[bam_rmdup_core] processing reference VNHH02000208.1...
+[bam_rmdup_core] 21 unmatched pairs
+[bam_rmdup_core] 402604 / 6285183 = 0.0641 in library '	'
