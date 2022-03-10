@@ -162,18 +162,34 @@
 @PG     ID:samtools.3   PN:samtools     PP:samtools.2   VN:1.13 CL:samtools view -h KM_3.mappedd_F4.bam
 ```
 - All of those VNHH strings are contigs/scaffolds that are in the unplaced.saffolds.fna file from downloading the genome. I am still not sure if I am going to use those
-- what if I tried keeping the header lines in when searching for SA
-samtools view -h KM_3.mappedd_F4.bam | awk /"@HD"|"@SQ"|"@PG"|"SA:Z"/ > KM_3_SAZh.bam
-
-made file that'c called grep.text that was just a list:
+- What if I tried keeping the header lines in when searching for SA, I can do this my making grep look for a list of things
+- Made file that's called grep.text that was just a list:
 ```
 @HD
 @SQ
 @PG
 SA:Z
 ```
-
-
-samtools view -h KM_3.mappedd_F4.bam | grep -f grep.txt > KM_3_SAZh.bam
-
-this worked to keep the header lines in the grepd bam file 
+- And then remade the SA:Z file to include the header:  
+`samtools view -h KM_3.mappedd_F4.bam | grep -f grep.txt > KM_3_SAZh.bam`
+- This worked to keep the header lines in the grepd bam file
+- Actually, this is no longer a bam file, because with grep it makes it readable, so I no longer have the issue of needing a header for samtools view to look at it. So now I can subset this file to be just ones that have DiNV as the main alignment, and I no longer need to use samtools view    
+`awk '$3=="DiNV"' KM_3_SAZh.bam > KM_3_SAZh_DiNV.bam`
+- Now to separate this out to the lines that have SA:Z:chr something. Start with chr2 to get all the lines that have a chimeric alingment to chr2 with DiNV as the main aligment   
+`grep 'SA:Z:chr2' KM_3_SAZh_DiNV.bam > KM_3_SAZh_DiNV_chr2.bam`
+- Repeat for all the other chromosomes (not including the unplaced scaffold ones)  
+`grep 'SA:Z:chr3' KM_3_SAZh_DiNV.bam > KM_3_SAZh_DiNV_chr3.bam`  
+`grep 'SA:Z:chr4' KM_3_SAZh_DiNV.bam > KM_3_SAZh_DiNV_chr4.bam`   
+`grep 'SA:Z:chr5' KM_3_SAZh_DiNV.bam > KM_3_SAZh_DiNV_chr5.bam`   
+`grep 'SA:Z:chr6' KM_3_SAZh_DiNV.bam > KM_3_SAZh_DiNV_chr6.bam`  
+`grep 'SA:Z:chrx' KM_3_SAZh_DiNV.bam > KM_3_SAZh_DiNV_chrx.bam`
+- Now I want to do the opposite, where I search for all the chromosomes as the main alignment and DiNV as the chimeric one  
+`grep 'SA:Z:DiNV' KM_3_SAZh.bam > KM_3_SAZh_chimDiNV.bam`
+- Then this file can be separated out into the various chromosomes as the main alignments  
+`awk '$3=="chr2"' KM_3_SAZh_chimDiNV.bam > KM_3_SAZh_chr2_chimDiNV.bam`  
+`awk '$3=="chr3"' KM_3_SAZh_chimDiNV.bam > KM_3_SAZh_chr3_chimDiNV.bam`  
+`awk '$3=="chr4"' KM_3_SAZh_chimDiNV.bam > KM_3_SAZh_chr4_chimDiNV.bam`  
+`awk '$3=="chr5"' KM_3_SAZh_chimDiNV.bam > KM_3_SAZh_chr5_chimDiNV.bam`   
+`awk '$3=="chr6"' KM_3_SAZh_chimDiNV.bam > KM_3_SAZh_chr6_chimDiNV.bam`  
+`awk '$3=="chrx"' KM_3_SAZh_chimDiNV.bam > KM_3_SAZh_chrx_chimDiNV.bam`  
+- Made a new directory called chimeric_reads and put all of the KM_3_SAZh files in there  
