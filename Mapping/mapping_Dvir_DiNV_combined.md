@@ -102,7 +102,7 @@
  `ls -s KM_3_SAZ.bam`  
  29448
 - Nope, same size. This makes further grep-ing/separating out easier I think. Why? Because an example of the SA flag looks like this `SA:Z:chr6,16979,-,41M94S,0,0;` where it has the reference chromosome, the position, the strand, the CIGAR string, the MAPQ and the NM. I will want to separate out who has a chimeric read to specific chromosomes/DiNV
-- See if this works, first I will separate out this file to everything that has the initial mapping to chr2 , then pipe it into grep where i will search for all the lines where the chimeric read also maps to DiNV and save that into a new file
+- See if this works, first I will separate out this file to everything that has the initial mapping to chr2 , then pipe it into grep where i will search for all the lines where the chimeric read also maps to DiNV and save that into a new file  
 `samtools view KM_3_SAZ.bam | awk '$3=="chr2"' | grep 'SA:Z:DiNV' > chim_chr2_DiNV.bam`
 - this doesn't work because samtools view wants the header lines in the bam file! why!! Ok what I can do is copy and paste the header lines into the bam file, I loose them when I grep because it doesn't use those lines. Maybe I could also look for those lines too??
 `samtools view -h KM_3.mappedd_F4.bam | less`
