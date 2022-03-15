@@ -1,0 +1,11 @@
+﻿main_alignment,chimeric_alignment,mate_mapped,num_matched,num_chim_matched,repetative
+DiNV,chr2,DiNV,111,35,maybe
+DiNV,chr2,DiNV,82,36,maybe
+DiNV,chr2,DiNV,88,36,maybe
+DiNV,chr3,chr3,32,114,yes
+DiNV,chr3,chr3,33,100,yes
+DiNV,chr3,chr3,32,114,yes
+DiNV,chr3,chr3,32,87,yes
+DiNV,chr3,chr3,32,114,yes
+DiNV,chr3,DiNV,55M1D22M1D23M,42,no
+DiNV,chr3,DiNV,55M1D22M1D15M,50,no
