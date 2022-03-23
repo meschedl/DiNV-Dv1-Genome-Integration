@@ -145,4 +145,8 @@ SA:Z
 ```
 - Those last three are all the same, likely they are just repetitive areas in chr2 that the same sequence mapped to, they have different positions. Although I'm pretty sure they are all different reads because the QNAME is different
 - My guess is that these are not "reliable" chimeric reads, mostly based off of the repetitive judgement. Unfortunately that's not a number or something concrete that I can be definitive about
-- My best guess on what to do is make a spreadsheet of all the chimeric reads and investigate if they are repetitive, and what the matches are. And I will probably have to go through this by eye, but that's ok because there aren't very many chimeric reads 
+- My best guess on what to do is make a spreadsheet of all the chimeric reads and investigate if they are repetitive, and what the matches are. And I will probably have to go through this by eye, but that's ok because there aren't very many chimeric reads
+
+
+Copy combined reference genome to my desktop
+`scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/Dvir.DiNV.combo.fa /Users/m741s365/Desktop/ `
