@@ -146,7 +146,97 @@ SA:Z
 - Those last three are all the same, likely they are just repetitive areas in chr2 that the same sequence mapped to, they have different positions. Although I'm pretty sure they are all different reads because the QNAME is different
 - My guess is that these are not "reliable" chimeric reads, mostly based off of the repetitive judgement. Unfortunately that's not a number or something concrete that I can be definitive about
 - My best guess on what to do is make a spreadsheet of all the chimeric reads and investigate if they are repetitive, and what the matches are. And I will probably have to go through this by eye, but that's ok because there aren't very many chimeric reads
-
-
-Copy combined reference genome to my desktop
-`scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/Dvir.DiNV.combo.fa /Users/m741s365/Desktop/ `
+- I went through every chimeric read by hand and classified them as maybe chimeric or probably not chimeric (based on a really repetitive sequence or a very small amount of the read mapping as chimeric - those I said weren't chimeric) [here](https://github.com/meschedl/DiNV-Dv1-Genome-Integration/blob/main/Mapping/chimeric_alignments_stats.csv)
+- Then I made this spreadsheet into a text file in the Linux by using `nano chimeric_stats.txt`
+- Then I want to separate out all the lines that say maybe chimeric  
+`awk '$8=="maybe"' chimeric_stats.txt > chimeric_stats_maybe.txt`
+- Now I want to separate out the first line of all of these, which is the indicator of the read  
+`awk '{print$1}' chimeric_stats_maybe.txt > maybe_chimeric_readnames.txt`
+- Now I can use this list of read names to separate out my original chimeric reads "BAM" file into just these reads - although it's not a BAM file anymore. If I add the header back in it could read as a SAM file? First I'll add in the header lines to the search document  
+`nano maybe_chimeric_readnames.txt` so it has `@HD @SQ @PG` as search parameters  
+- Then search the "bam" file for those lines  
+`grep -f maybe_chimeric_readnames.txt KM_3_SAZh.bam > maybe_chimeric_KM3.sam`
+- This file might be able to be read by IGV? But I can actually put it into a BAM file to to make sure, and IGV prefers a BAM file format  
+`samtools sort maybe_chimeric_KM3.sam -o maybe_chimeric_KM3.bam`
+- This is a real bam file
+- IGV also needs an associated index file with this BAM   
+`samtools index -b maybe_chimeric_KM3.bam`
+- This creates a .bai file that IGV needs
+- Now I want to copy these to my desktop to use IGV on
+- Copy combined reference genome to my desktop  
+`scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/Dvir.DiNV.combo.fa /Users/m741s365/Desktop/`  
+`scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/Mapping/chimeric_reads/maybe_chimeric_KM3.bam /Users/m741s365/Desktop`  
+`scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/Mapping/chimeric_reads/maybe_chimeric_KM3.bam.bai /Users/m741s365/Desktop/`
+- View in IGV - this is really hard to do because the actual alignments are really small compared to the concatenated genome, and there are so few of them! I tried at first by searching a position in DiNV on the list: 132752 which got me to a region with a lot of overlap in reads that say they are chimeric. This might be a good sign? Looking at the BAM file, there are 10 "alignments" or "reads" that have this position, 8 of them have a chimeric alignment to chrx and 2 of them to chr2. So, maybe this is a sign that it's not true chimeric read because it maps to multiple places in the _D. virilis_ genome? Or it could have inserted into 2 places?
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/132752.png)
+- What if I search in IGV all the positions of chimeric reads and image each of those? Want to print both the 3rd column (where it aligned to) and the 4th column (the position)   
+`samtools view maybe_chimeric_KM3.bam | awk '{print$3,$4}'`
+```
+chr2 32783122
+chr2 32783122
+chr3 6251589
+chr3 6251589
+chr3 19526083
+chr3 19526083
+chr3 19526083
+chr3 19526097
+chr3 19526110
+chr3 19526112
+chr4 16546625
+chr5 1214254
+chr5 2877488
+chr5 11902161
+chrx 4450716
+chrx 6782315
+chrx 10751602
+chrx 10751602
+chrx 10751602
+chrx 10751602
+chrx 10751602
+chrx 10751602
+chrx 14058146
+chrx 14532465
+chrx 17669245
+chrx 17669246
+chrx 19262801
+chrx 26750707
+chrx 26750707
+chrx 27176931
+chrx 27639332
+chrx 27759345
+chrx 32761825
+DiNV 1407
+DiNV 39583
+DiNV 39583
+DiNV 39583
+DiNV 39583
+DiNV 39583
+DiNV 44028
+DiNV 49076
+DiNV 52112
+DiNV 52112
+DiNV 69463
+DiNV 73568
+DiNV 84141
+DiNV 91291
+DiNV 104762
+DiNV 109107
+DiNV 132635
+DiNV 132637
+DiNV 132641
+DiNV 132703
+DiNV 132712
+DiNV 132752
+DiNV 132752
+DiNV 132752
+DiNV 132752
+DiNV 132752
+DiNV 132752
+DiNV 132752
+DiNV 132752
+DiNV 132752
+DiNV 132752
+DiNV 152624
+VNHH02000150.1 78439
+```
+- Now to look at what all of these look like in IGV 
