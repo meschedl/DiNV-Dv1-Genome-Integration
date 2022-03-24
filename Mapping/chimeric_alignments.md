@@ -168,7 +168,7 @@ SA:Z
 `scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/Mapping/chimeric_reads/maybe_chimeric_KM3.bam /Users/m741s365/Desktop`  
 `scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/Mapping/chimeric_reads/maybe_chimeric_KM3.bam.bai /Users/m741s365/Desktop/`
 - View in IGV - this is really hard to do because the actual alignments are really small compared to the concatenated genome, and there are so few of them! I tried at first by searching a position in DiNV on the list: 132752 which got me to a region with a lot of overlap in reads that say they are chimeric. This might be a good sign? Looking at the BAM file, there are 10 "alignments" or "reads" that have this position, 8 of them have a chimeric alignment to chrx and 2 of them to chr2. So, maybe this is a sign that it's not true chimeric read because it maps to multiple places in the _D. virilis_ genome? Or it could have inserted into 2 places?
-![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/132752.png)
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/132752.png)
 - What if I search in IGV all the positions of chimeric reads and image each of those? Want to print both the 3rd column (where it aligned to) and the 4th column (the position)   
 `samtools view maybe_chimeric_KM3.bam | awk '{print$3,$4}'`
 ```
@@ -239,4 +239,82 @@ DiNV 132752
 DiNV 152624
 VNHH02000150.1 78439
 ```
-- Now to look at what all of these look like in IGV 
+- Now to look at what all of these look like in IGV
+
+**chr2 32783122**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/32783122.png)
+**chr3 6251589**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/6251589.png)
+**chr3 19526083**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/19526083.png)
+**chr4 16546625**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/16546625.png)
+**chr5 1214254**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/1214254.png)
+**chr5 2877488**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/2877488.png)
+**chr5 11902161**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/11902161.png)
+**chrx 4450716**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/4450716.png)
+**chrx 6782315**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/6782315.png)
+**chrx 10751602**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/10751602.png)
+**chrx 14058146**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/14058146.png)
+**chrx 14532465**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/14532465.png)
+**chrx 17669245**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/17669245.png)
+**chrx 19262801**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/19262801.png)
+**chrx 26750707**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/26750707.png)
+**chrx 27176931**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/27176931.png)
+**chrx 27639332**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/27639332.png)
+**chrx 27759345**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/27759345.png)
+**chrx 32761825**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/32761825.png)
+**DiNV 1407**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/1407.png)
+**DiNV 39583**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/39583.png)
+**DiNV 44028**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/44028.png)
+**DiNV 49076**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/49076.png)
+**DiNV 52112**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/52112.png)
+**DiNV 69463**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/69463.png)
+**DiNV 73568**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/73568.png)
+**DiNV 84141**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/84141.png)
+**DiNV 91291**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/91291.png)
+**DiNV 104762**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/104762.png)
+**DiNV 109107**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/109107.png)
+**DiNV 152624**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/152624.png)
+**VNHH02000150.1 78439**  
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/78439.png)
+
+- Problem is that I'm not able to see where the chimeric read pair maps, the BAM file gives me the position of the chimeric alignment, but not the sequence. So maybe the shorter reads that I thought were not "likely" chimeric reads could be the matching ones. I need to match the main alignment position to the SA positions on other reads (hopefully)
+- Am I able to look at all chimeric reads and see if the "pairs" are in that file?  
+`awk '{print$1}' chimeric_stats.txt > all_chimeric_readnames.txt`  
+`grep -f all_chimeric_readnames.txt KM_3_SAZh.bam > all_chimeric_KM3.sam`
+`awk '{print$3,$4,$7,$17}' all_chimeric_KM3.sam > all_chimeric_positions.sam`
+- This works, but the SA field is pretty messy, I'm going to have to separate it out into tabs: `SA:Z:DiNV,132752,+,47S88M,60,0;`  
+`sed 's/,/\t/g' all_chimeric_positions.sam > all_chimeric_positions_t.sam`  
+`sed 's/:/\t/g' all_chimeric_positions_t.sam > all_chimeric_positions_tt.sam`  
+`awk '{print$1,$2,$3,$6,$7}' all_chimeric_positions_tt.sam > all_chimeric_positions_positions.sam`  
+- I want to add column names to this because I might look at this in R to try to figure out if there are any matches of chimerics
+`nano all_chimeric_positions_positions.sam`  
+Add `main_alingment main_position mapped_pair  chim_alignment  chim_position` 
