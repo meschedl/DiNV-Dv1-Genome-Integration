@@ -315,10 +315,26 @@ VNHH02000150.1 78439
 `sed 's/,/\t/g' all_chimeric_positions.sam > all_chimeric_positions_t.sam`  
 `sed 's/:/\t/g' all_chimeric_positions_t.sam > all_chimeric_positions_tt.sam`  
 `awk '{print$1,$2,$3,$6,$7}' all_chimeric_positions_tt.sam > all_chimeric_positions_positions.sam`  
-- I want to add column names to this because I might look at this in R to try to figure out if there are any matches of chimerics
+- I want to add column names to this because I might look at this in R to try to figure out if there are any matches of chimerics  
 `nano all_chimeric_positions_positions.sam`  
 Add `main_alingment main_position mapped_pair  chim_alignment  chim_position`
 - Copy this to my desktop to work in R  
 `scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/Mapping/chimeric_reads/all_chimeric_positions_positions.sam /Users/m741s365/Desktop/`
 - This didn't open properly in excel when I saved it as a csv but I can separate out the columns in excel
-- Brought this into R to try to see which alignments had a matching position for the chimeric read, looks like they all do. However I want to match them up together who with who, and I'm not sure how to do that
+- Brought this into R to try to see which alignments had a matching position for the chimeric read, looks like they all do
+- I think it would be better to have these with all of the read/alignment names as well so I'm going to remake the all_chimeric_positions.sam file to include the 1st column   
+`awk '{print$1,$3,$4,$7,$17}' all_chimeric_KM3.sam > all_chimeric_positions.sam`
+- Hmm now this is interesting because the read names look like this: `E00489:560:H7N33CCX2:1:1123:12824:3770`, which has a bunch of : in it, which I want to separate out later to get a clear column for the chromosome name of the chimeric read, so actually I don't want to keep these in here, actually just separate them out and paste them into the csv file when I save it to my desktop. There is probably a way to do this in bash but it's too easy to do it this way
+- So I am going to go back to the other `all_chimeric_positions.sam`  
+`awk '{print$3,$4,$7,$17}' all_chimeric_KM3.sam > all_chimeric_positions.sam`
+- So that if I re-do code it'll work right
+- And separate out into a separate file just the read "names"  
+`awk '{print$1}' all_chimeric_KM3.sam > chimeric_names.txt`
+- And copy and paste these into the csv file on my desktop as a new row
+
+
+I want to bring maybe_chimeric_KM3.sam into R and see if all the positions have a match. The readnames between matches should all be the same, because it's the same read that is chimeric! So trying to match up the read names in a separate column doesn't mean anything .
+- I don't need the header lines in maybe_chimeric_KM3.sam so I want to get rid of them
+`grep 'E00*' maybe_chimeric_KM3.sam > maybe_chimeric_KM3.txt`
+- Now do all the separating out for R
+`awk '{print$3,$4,$7,$17}' maybe_chimeric_KM3.txt | sed 's/,/\t/g' | sed 's/:/\t/g' | awk '{print$1,$2,$3,$6,$7}' >  maybe_chimeric_positions.csv`
