@@ -317,4 +317,8 @@ VNHH02000150.1 78439
 `awk '{print$1,$2,$3,$6,$7}' all_chimeric_positions_tt.sam > all_chimeric_positions_positions.sam`  
 - I want to add column names to this because I might look at this in R to try to figure out if there are any matches of chimerics
 `nano all_chimeric_positions_positions.sam`  
-Add `main_alingment main_position mapped_pair  chim_alignment  chim_position` 
+Add `main_alingment main_position mapped_pair  chim_alignment  chim_position`
+- Copy this to my desktop to work in R  
+`scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/Mapping/chimeric_reads/all_chimeric_positions_positions.sam /Users/m741s365/Desktop/`
+- This didn't open properly in excel when I saved it as a csv but I can separate out the columns in excel
+- Brought this into R to try to see which alignments had a matching position for the chimeric read, looks like they all do. However I want to match them up together who with who, and I'm not sure how to do that
