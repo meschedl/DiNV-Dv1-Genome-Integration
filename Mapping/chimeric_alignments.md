@@ -153,7 +153,10 @@ SA:Z
 - Now I want to separate out the first line of all of these, which is the indicator of the read  
 `awk '{print$1}' chimeric_stats_maybe.txt > maybe_chimeric_readnames.txt`
 - Now I can use this list of read names to separate out my original chimeric reads "BAM" file into just these reads - although it's not a BAM file anymore. If I add the header back in it could read as a SAM file? First I'll add in the header lines to the search document  
-`nano maybe_chimeric_readnames.txt` so it has `@HD @SQ @PG` as search parameters  
+`nano maybe_chimeric_readnames.txt` so it has `@HD @SQ @PG` as search parameters
+
+less chimeric_maybe_n.txt and rewrite maybe_chimeric_readnames.txt to be the same
+
 - Then search the "bam" file for those lines  
 `grep -f maybe_chimeric_readnames.txt KM_3_SAZh.bam > maybe_chimeric_KM3.sam`
 - This file might be able to be read by IGV? But I can actually put it into a BAM file to to make sure, and IGV prefers a BAM file format  
@@ -171,6 +174,7 @@ SA:Z
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/132752.png)
 - What if I search in IGV all the positions of chimeric reads and image each of those? Want to print both the 3rd column (where it aligned to) and the 4th column (the position)   
 `samtools view maybe_chimeric_KM3.bam | awk '{print$3,$4}'`
+
 ```
 chr2 32783122
 chr2 32783122
@@ -196,6 +200,7 @@ chrx 10751602
 chrx 10751602
 chrx 14058146
 chrx 14532465
+chrx 15622565
 chrx 17669245
 chrx 17669246
 chrx 19262801
@@ -236,9 +241,11 @@ DiNV 132752
 DiNV 132752
 DiNV 132752
 DiNV 132752
+DiNV 146208
 DiNV 152624
 VNHH02000150.1 78439
 ```
+
 - Now to look at what all of these look like in IGV
 
 **chr2 32783122**  
@@ -265,6 +272,8 @@ VNHH02000150.1 78439
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/14058146.png)
 **chrx 14532465**  
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/14532465.png)
+**chrx 15622565**
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/15622565.png)
 **chrx 17669245**  
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/17669245.png)
 **chrx 19262801**  
@@ -301,10 +310,28 @@ VNHH02000150.1 78439
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/104762.png)
 **DiNV 109107**  
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/109107.png)
+**DiNV 146208**
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/146208.png)
 **DiNV 152624**  
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/152624.png)
 **VNHH02000150.1 78439**  
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/78439.png)
+
+The colors do not make much sense to me, this is what IGV says:
+
+"IGV colors (1) paired end reads with inferred insert size smaller or larger than expected; (2) read with mate that is aligned to a different chromosome; (3) paired-end alignments with deviant pair orientation. Note that coloring by insert size is a feature designed originally for DNA alignments against the genome. It is based on set base pair values or computed from the size distribution of a library.
+
+See [Interpreting Color by Insert Size](https://software.broadinstitute.org/software/igv/interpreting_insert_size) for more detail.  
+Blue is for inserts that are smaller than expected  
+Red is for inserts that are larger than expected.  
+Inter-chromosomal rearrangements are color-coded by chromosome.  
+See [Interpreting Color by Pair Orientation](https://software.broadinstitute.org/software/igv/interpreting_pair_orientations) for more detail.  
+Shades of green, teal, and dark blue show structural events of inversions, duplications, and translocations.  
+Color assignments depend on sequencing platform.  
+Other Color by options are described in the alignment track pop-up menu options  
+Translocations on the same chromosome can be detected by color-coding for pair orientation, whereas translocations between two chromosomes can be detected by coloring by insert size. See both by selecting the Color alignments by> insert size and pair orientation option."
+
+Because the BAM file is so small, I'm not sure if these mean anything?
 
 - Problem is that I'm not able to see where the chimeric read pair maps, the BAM file gives me the position of the chimeric alignment, but not the sequence. So maybe the shorter reads that I thought were not "likely" chimeric reads could be the matching ones. I need to match the main alignment position to the SA positions on other reads (hopefully)
 - Am I able to look at all chimeric reads and see if the "pairs" are in that file?  
@@ -334,7 +361,34 @@ Add `main_alingment main_position mapped_pair  chim_alignment  chim_position`
 
 
 I want to bring maybe_chimeric_KM3.sam into R and see if all the positions have a match. The readnames between matches should all be the same, because it's the same read that is chimeric! So trying to match up the read names in a separate column doesn't mean anything .
-- I don't need the header lines in maybe_chimeric_KM3.sam so I want to get rid of them
+- I don't need the header lines in maybe_chimeric_KM3.sam so I want to get rid of them  
 `grep 'E00*' maybe_chimeric_KM3.sam > maybe_chimeric_KM3.txt`
-- Now do all the separating out for R
+- Now do all the separating out for R  
 `awk '{print$3,$4,$7,$17}' maybe_chimeric_KM3.txt | sed 's/,/\t/g' | sed 's/:/\t/g' | awk '{print$1,$2,$3,$6,$7}' >  maybe_chimeric_positions.csv`
+- Save to Desktop  
+`scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/Mapping/chimeric_reads/maybe_chimeric_positions.csv /Users/m741s365/Desktop/GitHub/DiNV-Dv1-Genome-Integration/Mapping/`
+- Add in the read names by pasting into the excel  
+`awk '{print$1}' maybe_chimeric_KM3.txt`
+- All the chimeric positions are present in the main alignment positions
+- These are no longer all the "reads" that I thought might look chimeric, there were 37 of those. When looking through the file for the read names that matched those 37, the chimeric alignments with the same read name (of course) got separated out too, so this file now has 66 alignments
+- [This](https://github.com/meschedl/DiNV-Dv1-Genome-Integration/blob/main/Mapping/maybe_chimeric_positions.csv) is the csv where all of this is at, and all of these are already viewed on IGV and I have images for them
+
+
+Ok now I want to do something like I did for that chimeric_alignments_stats.csv, where I looked at the actual sequences to see if they were repetative or not. So I want to look at the main alignment, and then also at what the sequence is of the chimeric alignment, and try to code out what they look like. For this I'll need a file with the already "maybe chimeric" coded read names, the main alignment, chimeric alignment, mate mapped, the positions of each, the sequence of the main alignment, and I think the number of matched nucleotides in the chimeric alignment as well as in the main alignment. I think I'll need those to tell which sequence is for which chimeric alignment. This is because for some of the reads, they are in multiple chimeric alignments, but I want to get the sequence correct. I'm not sure I'll be able to do this. I already separated out the number of mapped nucleotides in the chimeric_alignments_stats.csv, which I had to do my hand, so I want to see if I can add the positions to this file.
+
+What I can do is filter the chimeric_alignments_stats.csv to be only the read names that have a "maybe", and hopefully this will be in the same order as my other files that have all the position information.
+
+- copy chimeric_alignments_stats.csv back into the Linux because I'm not sure it's there  
+`scp /Users/m741s365/Desktop/Github/DiNV-Dv1-Genome-Integration/Mapping/chimeric_alignments_stats.csv runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/Mapping/chimeric_reads/`  
+- When I bring this in, everything is separated by a comma, so I need to replace first  
+`sed 's/,/\t/g' chimeric_alignments_stats.csv > chimeric_alignments_stats`  
+`awk '$8=="maybe"' chimeric_alignments_stats > chimeric_maybe.txt`
+- Separate out the read name     
+`awk '{print$1}' chimeric_maybe.txt > chimeric_maybe_n.txt`
+- Then search the stats file for those read names  
+`grep -f  chimeric_maybe_n.txt chimeric_alignments_stats > chimeric_align_maybe_all.txt`
+- This is 65 lines which is not right, I should have 67 here. I will need to go back and make sure I'm doing all this right. It is missing the DiNV 146208 one which is read E00489:560:H7N33CCX2:1:1120:9759:49795 - this is weird bc this is in the chimeric_alignments_stats.csv just fine... I will try copying it again
+this doesn't work, problem comes in when I am trying to make the files viewable for IGV maybe? What's weird is that I search KM_3_SAZh.bam for all of the readnames that are present in chimeric_alignments_stats.csv, and this gives me 68 lines, not 65. So maybe I lost 3 alignments when copy-pasting to chimeric_alignments_stats.csv?
+
+
+go through maybe_chimeric_KM3.sam and remake chimeric_alignments_stats.csv 
