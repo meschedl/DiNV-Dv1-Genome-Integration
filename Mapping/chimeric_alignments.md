@@ -389,6 +389,114 @@ What I can do is filter the chimeric_alignments_stats.csv to be only the read na
 `grep -f  chimeric_maybe_n.txt chimeric_alignments_stats > chimeric_align_maybe_all.txt`
 - This is 65 lines which is not right, I should have 67 here. I will need to go back and make sure I'm doing all this right. It is missing the DiNV 146208 one which is read E00489:560:H7N33CCX2:1:1120:9759:49795 - this is weird bc this is in the chimeric_alignments_stats.csv just fine... I will try copying it again
 this doesn't work, problem comes in when I am trying to make the files viewable for IGV maybe? What's weird is that I search KM_3_SAZh.bam for all of the readnames that are present in chimeric_alignments_stats.csv, and this gives me 68 lines, not 65. So maybe I lost 3 alignments when copy-pasting to chimeric_alignments_stats.csv?
+- Might need to go through maybe_chimeric_KM3.sam and remake chimeric_alignments_stats.csv
 
+However for now, I am going to keep working at IGV. I want to see if places where I have aligned reads that are chimeric also have non-chimeric aligned reads, and if they span the "chimeric" junction.
 
-go through maybe_chimeric_KM3.sam and remake chimeric_alignments_stats.csv 
+- Transfer the mapped BAM file (all alignments) to desktop  
+`scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/Mapping/KM_3.mappedd_F4.bam /Users/m741s365/Desktop/`
+- Make .bai index for this file   
+`samtools index -b KM_3.mappedd_F4.bam`
+- Copy that to desktop  
+`scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/Mapping/KM_3.mappedd_F4.bam.bai /Users/m741s365/Desktop/`
+- Then look at some of the most promising chimeric alignments from the pictures above, where there is high "coverage" of multiple alignments truncating near the same place
+- **chrx 10751602**
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/10751602-all.png)
+- The chimeric reads are about 40bp in length
+- To get information on how many bases in the reads are clipped, I search for the position  
+`grep '10751602' KM_3_SAZh.bam`
+- Information on these reads:  
+|read name| left clip |match|right clip|
+|---|---|---|---|
+|E00489:560:H7N33CCX2:1:1103:6431:15619|98H|37M|NA|
+|E00489:560:H7N33CCX2:1:2202:28686:65775|99H|36M|NA|
+|E00489:560:H7N33CCX2:1:2219:27651:53363|50H|35M|NA|
+|E00489:560:H7N33CCX2:1:2203:11373:10996|8H|38M|33H|
+|E00489:560:H7N33CCX2:1:2203:24231:63156|86H|38M|11H|
+|E00489:560:H7N33CCX2:1:2209:23855:43483|84H|38M|13H|
+- So it looks like there is a good amount of alignment around these alignments from other reads. This may be a sign that these few reads are chimeric
+- Look at other regions like this:
+- **chr3 19526083**
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/19526083-all.png)
+- Get position information:  
+`grep '19526083' KM_3_SAZh.bam`   
+`grep '19526097' KM_3_SAZh.bam`  
+`grep '19526110' KM_3_SAZh.bam`  
+`grep '19526112' KM_3_SAZh.bam`  
+|read name| left clip |match|right clip|
+|---|---|---|---|
+|E00489:560:H7N33CCX2:1:1114:4990:50955|NA|114M|21S|
+|E00489:560:H7N33CCX2:1:1205:14397:14406|NA|114M|21S|
+|E00489:560:H7N33CCX2:1:2211:13007:62452|NA|114M|21S|
+|E00489:560:H7N33CCX2:1:1119:30289:8148|NA|100M|22S|
+|E00489:560:H7N33CCX2:1:2203:17665:38667|NA|87M|21S|
+|E00489:560:H7N33CCX2:1:1119:30289:8148|NA|85M|37S|
+- **chrx 17669245**
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/17669245-all.png)
+- Get position information   
+`grep '17669245' KM_3_SAZh.bam`
+`grep '17669246' KM_3_SAZh.bam`
+|read name| left clip |match|right clip|
+|---|---|---|---|
+|E00489:560:H7N33CCX2:1:1205:6969:4983|NA|37M|98H|
+|E00489:560:H7N33CCX2:1:1206:6218:27943|89H|36M|10H|
+- **chr2 32783122**
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/32783122-all.png)
+- Get position information    
+`grep '32783122' KM_3_SAZh.bam`  
+|read name| left clip |match|right clip|
+|---|---|---|---|
+|E00489:560:H7N33CCX2:1:1103:6431:15619|11H|36M|88H|
+|E00489:560:H7N33CCX2:1:1106:12063:16164|17H|36M|82H|
+|E00489:560:H7N33CCX2:1:2105:4929:39176|17H|36M|82H|
+- **chr3 6251589**
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/6251589-all.png)
+- Get position information    
+`grep '6251589' KM_3_SAZh.bam`  
+|read name| left clip |match|right clip|
+|---|---|---|---|
+|E00489:560:H7N33CCX2:1:2220:8927:35027|93H|42M|NA|
+|E00489:560:H7N33CCX2:1:2220:8927:35027|85H|50M|NA|
+- **DiNV 39583**
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/39583-all.png)
+- Get position information    
+`grep '39583' KM_3_SAZh.bam`  
+|read name| left clip |match|right clip|
+|---|---|---|---|
+|E00489:560:H7N33CCX2:1:1114:4990:50955|103H|32M|NA|
+|E00489:560:H7N33CCX2:1:1119:30289:8148|89H|33M|NA|
+|E00489:560:H7N33CCX2:1:1205:14397:14406|103H|32M|NA|
+|E00489:560:H7N33CCX2:1:2203:17665:38667|76H|32M|NA|
+|E00489:560:H7N33CCX2:1:2211:13007:62452|103H|32M|NA|
+- **DiNV 52112**
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/52112-all.png)
+- Get position information    
+`grep '52112' KM_3_SAZh.bam`  
+|read name| left clip |match|right clip|
+|---|---|---|---|
+|E00489:560:H7N33CCX2:1:2220:8927:35027|35S|55M1D22M1D23M|NA|
+|E00489:560:H7N33CCX2:1:2220:8927:35027|43S|55M1D22M1D15M|NA|
+- **DiNV 132752*** (this is actually multiple positions)
+![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/132752-all.png)
+- Get position information    
+`grep '132752' KM_3_SAZh.bam`  
+`grep '132635' KM_3_SAZh.bam`
+`grep '132637' KM_3_SAZh.bam`
+`grep '132641' KM_3_SAZh.bam`
+`grep '132703' KM_3_SAZh.bam`
+|read name| left clip |match|right clip|
+|---|---|---|---|
+|E00489:560:H7N33CCX2:1:1103:6431:15619|30S|105M|NA|
+|E00489:560:H7N33CCX2:1:1106:12063:16164|53S|82M|NA|
+|E00489:560:H7N33CCX2:1:1206:6218:27943|52S|83M|NA|
+|E00489:560:H7N33CCX2:1:2202:28686:65775|29S|106M|NA|
+|E00489:560:H7N33CCX2:1:2219:27651:53363|28S|57M|NA|
+|E00489:560:H7N33CCX2:1:1103:6431:15619|47S|88M|NA|
+|E00489:560:H7N33CCX2:1:1106:12063:16164|45S|90M|NA|
+|E00489:560:H7N33CCX2:1:1206:6218:27943|47S|88M|NA|
+|E00489:560:H7N33CCX2:1:2203:24231:63156|42S93M|NA|
+|E00489:560:H7N33CCX2:1:2209:23855:43483|44S|91M|NA|
+|E00489:560:H7N33CCX2:1:1205:6969:4983|NA|65M3D45M|25S|
+|E00489:560:H7N33CCX2:1:2116:10358:18590|NA|63M3D45M|27S|
+|E00489:560:H7N33CCX2:1:1205:6969:4983|NA|59M3D45M|31S|
+|E00489:560:H7N33CCX2:1:2203:11373:10996|6S|45M|28S|
