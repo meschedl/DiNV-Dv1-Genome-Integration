@@ -406,6 +406,7 @@ However for now, I am going to keep working at IGV. I want to see if places wher
 - To get information on how many bases in the reads are clipped, I search for the position  
 `grep '10751602' KM_3_SAZh.bam`
 - Information on these reads:  
+
 |read name| left clip |match|right clip|
 |---|---|---|---|
 |E00489:560:H7N33CCX2:1:1103:6431:15619|98H|37M|NA|
@@ -414,7 +415,9 @@ However for now, I am going to keep working at IGV. I want to see if places wher
 |E00489:560:H7N33CCX2:1:2203:11373:10996|8H|38M|33H|
 |E00489:560:H7N33CCX2:1:2203:24231:63156|86H|38M|11H|
 |E00489:560:H7N33CCX2:1:2209:23855:43483|84H|38M|13H|
+
 - So it looks like there is a good amount of alignment around these alignments from other reads. This may be a sign that these few reads are chimeric
+- There is also clipping on the right and the left 
 - Look at other regions like this:
 - **chr3 19526083**
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/19526083-all.png)
@@ -423,6 +426,7 @@ However for now, I am going to keep working at IGV. I want to see if places wher
 `grep '19526097' KM_3_SAZh.bam`  
 `grep '19526110' KM_3_SAZh.bam`  
 `grep '19526112' KM_3_SAZh.bam`  
+
 |read name| left clip |match|right clip|
 |---|---|---|---|
 |E00489:560:H7N33CCX2:1:1114:4990:50955|NA|114M|21S|
@@ -431,36 +435,44 @@ However for now, I am going to keep working at IGV. I want to see if places wher
 |E00489:560:H7N33CCX2:1:1119:30289:8148|NA|100M|22S|
 |E00489:560:H7N33CCX2:1:2203:17665:38667|NA|87M|21S|
 |E00489:560:H7N33CCX2:1:1119:30289:8148|NA|85M|37S|
+
 - **chrx 17669245**
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/17669245-all.png)
 - Get position information   
 `grep '17669245' KM_3_SAZh.bam`
 `grep '17669246' KM_3_SAZh.bam`
+
 |read name| left clip |match|right clip|
 |---|---|---|---|
 |E00489:560:H7N33CCX2:1:1205:6969:4983|NA|37M|98H|
 |E00489:560:H7N33CCX2:1:1206:6218:27943|89H|36M|10H|
+
 - **chr2 32783122**
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/32783122-all.png)
 - Get position information    
 `grep '32783122' KM_3_SAZh.bam`  
+
 |read name| left clip |match|right clip|
 |---|---|---|---|
 |E00489:560:H7N33CCX2:1:1103:6431:15619|11H|36M|88H|
 |E00489:560:H7N33CCX2:1:1106:12063:16164|17H|36M|82H|
 |E00489:560:H7N33CCX2:1:2105:4929:39176|17H|36M|82H|
+
 - **chr3 6251589**
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/6251589-all.png)
 - Get position information    
 `grep '6251589' KM_3_SAZh.bam`  
+
 |read name| left clip |match|right clip|
 |---|---|---|---|
 |E00489:560:H7N33CCX2:1:2220:8927:35027|93H|42M|NA|
 |E00489:560:H7N33CCX2:1:2220:8927:35027|85H|50M|NA|
+
 - **DiNV 39583**
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/39583-all.png)
 - Get position information    
 `grep '39583' KM_3_SAZh.bam`  
+
 |read name| left clip |match|right clip|
 |---|---|---|---|
 |E00489:560:H7N33CCX2:1:1114:4990:50955|103H|32M|NA|
@@ -468,14 +480,17 @@ However for now, I am going to keep working at IGV. I want to see if places wher
 |E00489:560:H7N33CCX2:1:1205:14397:14406|103H|32M|NA|
 |E00489:560:H7N33CCX2:1:2203:17665:38667|76H|32M|NA|
 |E00489:560:H7N33CCX2:1:2211:13007:62452|103H|32M|NA|
+
 - **DiNV 52112**
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/52112-all.png)
 - Get position information    
 `grep '52112' KM_3_SAZh.bam`  
+
 |read name| left clip |match|right clip|
 |---|---|---|---|
 |E00489:560:H7N33CCX2:1:2220:8927:35027|35S|55M1D22M1D23M|NA|
 |E00489:560:H7N33CCX2:1:2220:8927:35027|43S|55M1D22M1D15M|NA|
+
 - **DiNV 132752*** (this is actually multiple positions)
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/132752-all.png)
 - Get position information    
@@ -484,6 +499,7 @@ However for now, I am going to keep working at IGV. I want to see if places wher
 `grep '132637' KM_3_SAZh.bam`
 `grep '132641' KM_3_SAZh.bam`
 `grep '132703' KM_3_SAZh.bam`
+
 |read name| left clip |match|right clip|
 |---|---|---|---|
 |E00489:560:H7N33CCX2:1:1103:6431:15619|30S|105M|NA|
@@ -500,3 +516,5 @@ However for now, I am going to keep working at IGV. I want to see if places wher
 |E00489:560:H7N33CCX2:1:2116:10358:18590|NA|63M3D45M|27S|
 |E00489:560:H7N33CCX2:1:1205:6969:4983|NA|59M3D45M|31S|
 |E00489:560:H7N33CCX2:1:2203:11373:10996|6S|45M|28S|
+
+-
