@@ -551,21 +551,25 @@ However for now, I am going to keep working at IGV. I want to see if places wher
 - Took chr3_6251589_right.txt and BLASTd it to the DiNV genome
   - No significant similarity was found!
 - DiNV 39583 - Now I have DiNV, which I'll want to BLAST to the D. virilis genome. For this one there's ~100bp on the left side and no bp clipped off on the right side, I'll do 100 on the left and 50 on the right to be sure. For the left I want 39483 - 39583. For the right I want 39616 - 39666
-- Took DiNV_39583_left.txt and BLASTd it to the DiNV genome
+- Took DiNV_39583_left.txt and BLASTd it to the D. virilis genome
   - No significant similarity was found!
-- Took DiNV_39583_right.txt and BLASTd it to the DiNV genome
+- Took DiNV_39583_right.txt and BLASTd it to the D. virilis genome
   - No significant similarity was found!
 - DiNV 52112 - for this one there is about 50bp on the left that is clipped, and none on the right. I'll do 50bp on each side to be safe. For the left I want 52062 - 52112. For the right I want 52215 - 52265
-- Took DiNV_52112_left.txt and BLASTd it to the DiNV genome
+- Took DiNV_52112_left.txt and BLASTd it to the D. virilis genome
   - No significant similarity was found!
-- Took DiNV_52112_right.txt and BLASTd it to the DiNV genome
+- Took DiNV_52112_right.txt and BLASTd it to the D. virilis genome
   - No significant similarity was found!
-- DiNV 132752 - so this is 2 different alignments, so I'm going to have an L for the left alignment, and an R for the right alignment. For DiNV_132752_L_Left 132590 - 132640. For For DiNV_132752_L_Right 132752 - 132802. For DiNV_132752_R_Left 132702 - 132752. For DiNV_132752_R_Right 132860 - 132910.
-- Took DiNV_132752_L_Left.txt and BLASTd it to the DiNV genome
+- DiNV 132752 - so this is 2 different alignments, so I'm going to have an L for the left alignment, and an R for the right alignment
+  - For DiNV_132752_L_Left 132590 - 132640
+  - For For DiNV_132752_L_Right 132752 - 132802
+  - For DiNV_132752_R_Left 132702 - 132752
+  - For DiNV_132752_R_Right 132860 - 132910
+- Took DiNV_132752_L_Left.txt and BLASTd it to the D. virilis genome
   - No significant similarity was found!
-- Took DiNV_132752_L_Right.txt and BLASTd it to the DiNV genome
+- Took DiNV_132752_L_Right.txt and BLASTd it to the D. virilis genome
   - No significant similarity was found!
-- Took DiNV_132752_R_Left.txt and BLASTd it to the DiNV genome
+- Took DiNV_132752_R_Left.txt and BLASTd it to the D. virilis genome
   - No significant similarity was found!
-- Took DiNV_132752_R_Right.txt and BLASTd it to the DiNV genome
+- Took DiNV_132752_R_Right.txt and BLASTd it to the D. virilis genome
   - No significant similarity was found!
