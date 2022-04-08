@@ -417,14 +417,14 @@ However for now, I am going to keep working at IGV. I want to see if places wher
 |E00489:560:H7N33CCX2:1:2209:23855:43483|84H|38M|13H|
 
 - So it looks like there is a good amount of alignment around these alignments from other reads. This may be a sign that these few reads are chimeric
-- There is also clipping on the right and the left 
+- There is also clipping on the right and the left
 - Look at other regions like this:
 - **chr3 19526083**
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/19526083-all.png)
 - Get position information:  
-`grep '19526083' KM_3_SAZh.bam`   
-`grep '19526097' KM_3_SAZh.bam`  
-`grep '19526110' KM_3_SAZh.bam`  
+`grep '19526083' KM_3_SAZh.bam`    
+`grep '19526097' KM_3_SAZh.bam`   
+`grep '19526110' KM_3_SAZh.bam`   
 `grep '19526112' KM_3_SAZh.bam`  
 
 |read name| left clip |match|right clip|
@@ -439,7 +439,7 @@ However for now, I am going to keep working at IGV. I want to see if places wher
 - **chrx 17669245**
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/17669245-all.png)
 - Get position information   
-`grep '17669245' KM_3_SAZh.bam`
+`grep '17669245' KM_3_SAZh.bam`  
 `grep '17669246' KM_3_SAZh.bam`
 
 |read name| left clip |match|right clip|
@@ -494,11 +494,11 @@ However for now, I am going to keep working at IGV. I want to see if places wher
 - **DiNV 132752*** (this is actually multiple positions)
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/IGV_photos/132752-all.png)
 - Get position information    
-`grep '132752' KM_3_SAZh.bam`  
-`grep '132635' KM_3_SAZh.bam`
-`grep '132637' KM_3_SAZh.bam`
-`grep '132641' KM_3_SAZh.bam`
-`grep '132703' KM_3_SAZh.bam`
+`grep '132752' KM_3_SAZh.bam`   
+`grep '132635' KM_3_SAZh.bam`  
+`grep '132637' KM_3_SAZh.bam`  
+`grep '132641' KM_3_SAZh.bam`  
+`grep '132703' KM_3_SAZh.bam`  
 
 |read name| left clip |match|right clip|
 |---|---|---|---|
@@ -517,4 +517,55 @@ However for now, I am going to keep working at IGV. I want to see if places wher
 |E00489:560:H7N33CCX2:1:1205:6969:4983|NA|59M3D45M|31S|
 |E00489:560:H7N33CCX2:1:2203:11373:10996|6S|45M|28S|
 
--
+- Now I want to take the sequences around the chimeric reads and BLAST them to the opposite genome to see if there is any homology there. If the sequences overlaps with the other genome, then it makes sense that the reads would map chimerically. But if there is no homology, it may be a good indication of a truly chimeric read
+- Looking at chrx 10,751,602, based off of the table of what is left and right clipped, I am going to want to look for the 100 bases before the alignment starts: ~10,751,500 to 10,751,602, and then maybe the 50 bases after the alignment ends: 10751640 to 10751690
+- I'm going to use bioawk to try to extract out these sequences from the combined genome  
+`bioawk -c fastx '$Dvir.DiNV.combo.fna=="chrx" {print ">"$Dvir.DiNV.combo.fna "\n" substr(seq,10751500,100)}'`
+- This didn't work right and Rob is at a conference so I don't want to bother him. I can easily extract out these sequences in Geneious
+- I just need to input the combined genome to Geneious!
+`scp runcklesslab@10.119.46.137:/home/runcklesslab/Maggie/DiNV-DV-1/Dvir.DiNV.combo.fna /Users/m741s365/Desktop/`
+- This worked easily, I created annotations for those regions, extracted them, and then exported the sequence to my computer
+- For all of these I am going to use MegaBLAST for highly similar sequences
+- Took chrx_10,751,602_left.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found! No hits
+- Took chrx_10,751,602_right.txt and BLASTd it to the DiNV genome
+  - Also no significant similarity found!
+- chr3 19,526,083 - for this one none of the chimeric reads had any left clipping, however I'm still going to BLAST ~50bp of that side just in case. For the left I am looking for 19526033 - 19526083. For the right 19526190 - 19526240
+- Took chr3_19526083_left.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- Took chr3_19526083_right.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- chrx 17669245 - for this one there is about a 100bp hard clip on each side depending on the alignment. So I will doo 100bp around the alignment on right and left. I am looking for 17669145 - 17669245 for the left. And 17669285 - 17669385 on the right
+- Took chrx_17669245_left.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- Took chrx_17669245_right.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- chr2 32783122 - this one has a few bases on the left side, and closer to 100 bases on the right side. I'm going to do 30 bases and 100 bases. For the left I want 32783092 - 32783122. For the right side I want 32783157 - 32783257
+- Took chr2_32783122_left.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- Took chr2_32783122_right.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- chr3 6251589 - for this one there is about 100bp on the left that is clipped, and none on the right. I'll do 100 on the left and 50 on the right to be sure. For the left I want 6251489 - 6251589. For the right I want 6251638 - 6251688
+- Took chr3_6251589_left.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- Took chr3_6251589_right.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- DiNV 39583 - Now I have DiNV, which I'll want to BLAST to the D. virilis genome. For this one there's ~100bp on the left side and no bp clipped off on the right side, I'll do 100 on the left and 50 on the right to be sure. For the left I want 39483 - 39583. For the right I want 39616 - 39666
+- Took DiNV_39583_left.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- Took DiNV_39583_right.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- DiNV 52112 - for this one there is about 50bp on the left that is clipped, and none on the right. I'll do 50bp on each side to be safe. For the left I want 52062 - 52112. For the right I want 52215 - 52265
+- Took DiNV_52112_left.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- Took DiNV_52112_right.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- DiNV 132752 - so this is 2 different alignments, so I'm going to have an L for the left alignment, and an R for the right alignment. For DiNV_132752_L_Left 132590 - 132640. For For DiNV_132752_L_Right 132752 - 132802. For DiNV_132752_R_Left 132702 - 132752. For DiNV_132752_R_Right 132860 - 132910.
+- Took DiNV_132752_L_Left.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- Took DiNV_132752_L_Right.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- Took DiNV_132752_R_Left.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
+- Took DiNV_132752_R_Right.txt and BLASTd it to the DiNV genome
+  - No significant similarity was found!
