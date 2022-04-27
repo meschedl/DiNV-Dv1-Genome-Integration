@@ -50,4 +50,6 @@ My goal is to generate primers that span some of the chimeric junctions in the s
 
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/chr3-6251284-primers.png)
 - Now to find the DiNV region
-- This is at 52112 in DiNV
+- This is at 52112 in DiNV and the whole alignment description is 43S55M1D22M1D15M
+- I think that means that the part mapped to DiNV includes what mapped to chr3, because what maps properly is the second half of the read in both...
+- I don't know what is going on with this because the sequences aren't similar 
