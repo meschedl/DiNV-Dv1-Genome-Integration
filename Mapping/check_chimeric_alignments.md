@@ -180,4 +180,4 @@ ATTGTTGTTGTTGCTGTTGTTGTTGTTGTTGTTGTACTTCTTTTTTTGATTCTATTAAAGACGACGATGACGATGATGAT
 ![](https://raw.githubusercontent.com/meschedl/DiNV-Dv1-Genome-Integration/main/images/132752_3_align.png)
 
 
-Based off of these, there are no chimeric alignments where half the read is DV-1 and the other half of the read is DiNV and are completely separate. That was what we are looking for. We are not able to find any evidence that DiNV integrates into DV-1 cell genome with this method.
+Based off of these, there are no "good" chimeric alignments where half the read is DV-1 and the other half of the read is DiNV and are completely separate. That was what we are looking for. There are more chimeric alignments that I didn't look at, either I ruled out because they seemed very repetitive (and these seemed this way too) or they only had 1 read coverage. We are not able to find any evidence that DiNV integrates into DV-1 cell genome with this method.
